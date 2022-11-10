@@ -1,0 +1,21 @@
+
+
+input{
+    padding:9px;
+}
+span{
+
+    font-size: larger;
+    font-weight: bold;
+}
+#head{
+    text-align: center;
+    background-color: #6CB00B;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    }
+    td{
+       font-weight: bold; 
+    }

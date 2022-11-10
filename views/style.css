@@ -1,0 +1,80 @@
+
+header   nav{
+margin-top: 40px;
+}
+nav ul
+{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li
+{
+	margin: 0;
+	padding: 0;
+	float: left;	
+	position: relative;	
+}
+
+nav a 
+{
+	padding: 10px 20px;
+	display: block;
+	background: white;
+	font-family: 'Tahoma';
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 400;
+	color: #0F0F0F;
+	text-align: center;
+	text-decoration: none;	
+	transition: all .25s ease;
+}
+
+nav ul li ul li :hover {
+	background-color:#e1e1e1;
+	}
+
+
+
+
+
+nav li:hover a
+{
+	background-color: #6CB00B;
+}
+
+nav li ul 
+{
+	width: auto;
+	float: left;
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	top: 35px;
+	z-index: 1;
+	background-color: white;	
+	transition: all .25s ease;
+}
+
+nav li:hover ul 
+{
+	visibility: visible;
+	top: 42px;
+	opacity: 1;
+}
+nav li ul li 
+{
+	width: 100%;
+}
+nav li ul li a
+{
+	width: 100%;
+	text-align: left;
+}
+nav li ul a:hover 
+{
+	background-color: #6CB00B;
+}

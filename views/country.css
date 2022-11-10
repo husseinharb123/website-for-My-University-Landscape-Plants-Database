@@ -1,0 +1,59 @@
+.frame img {
+	width: 60px; 
+   
+  border-radius: 50%;
+}
+
+.imgborder{ 
+	display: flex;
+	border: 1px solid lightgreen; 
+	width:600px; 
+	padding: 5px; 
+    background-color: #F5F5DC; 
+    position: relative; 
+    left: 40px;
+	border-radius: 10px;
+	margin-bottom: 20px; 
+	cursor:pointer;
+
+}
+.imgborder:hover{ 
+
+	
+}
+
+.frame{ 
+	margin-top: 5px; 
+	padding-top: 20px; 
+	position: relative; 
+	left: 150px; 
+	border: 1px solid green; 
+    width:700px; 
+	padding: 5px; 
+    background-color: #F0FFF0; 
+	height: 500px; 
+	overflow:scroll;
+	
+
+} 
+#country{ 
+
+	position: relative; 
+    left: 50px;
+    top: 5px;
+}
+
+#pi{
+	position: relative; 
+	top: 82px; 
+	right: 110px; 
+	padding: 10px; 
+	width: 220px;
+	transform: rotate(90deg);
+	background-color: lightgreen;
+	border-left: 6px solid green;
+	z-index: 2; 
+
+	
+	
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html >
+<head>  
+<title>my project</title>
+  <link rel="stylesheet" href="home.css">
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="nav_search.css">
+  <link rel = "stylesheet" href = "contactus.css"> 
+    
+
+</head>
+<body>
+    <div class="flexbox"></div>
+<header id="headpage">
+    <a href="http://www.aub.edu.lb/fafs/Pages/default.aspx" class="logo">
+        <img src="images/aub-log1.png">
+        <span class="fontsmall">Landscape Design & Ecosystem Management</span>
+        <span class="fontnormal">Faculty of Agriculture & Food Sciences</span>
+
+    </a>
+
+    <nav>
+      <ul> 
+  
+        <li>
+                  <a href="/">Home <i class="icon-chevron-down"></i></a> 
+          <ul>
+            <li><a href="searchbyname.html" >Search By Name</a></li>
+            <li><a href="plantidentifaction.html">Plant identfication</a></li>
+                      <li><a href="editpage.html">Edit plant Database</a></li>
+          </ul>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="usefulink.html">Useful Links</a></li>
+        <li><a href="/imagegallary">Image Gallery</a></li>
+    
+        <li><a href="Popular_Plant_Categories.html">Popular Plant Categories</a></li>
+        <li><a href="gloccery.html">Glossary</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div id="socialmedia">
+      <a href="https://twitter.com/AUB_Lebanon?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+      <a href="https://www.facebook.com/aub.edu.lb/" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+      <a href="http://www.aub.edu.lb/Libraries/Pages/default.aspx" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+  </div>
+
+</header>    
+<div id="mainimg"></div>   
+
+<div id="part2flex">
+  <div id="divofimges">
+
+    <a href="searchbyname.html"> <div style="width :120px" class="searchtype" >
+    <img src="images/search1.jpg" alt="" >
+    <h3>Search By Name</h3>
+    </div></a>
+    <a href="plantidentifaction.html"> <div style="width :120px"  class="searchtype">
+        <img src="images/icon.png" alt="" srcset="">
+        <h3>Plant identfication</h3>
+    </div></a>
+    <a href="editpage.html"><div style="width :120px"  class="searchtype">
+        <img src="images/edit.png" alt="" srcset="">
+        <h3>Edit plant Database</h3>
+    </div></a>
+       
+    </div>
+<div id="searchengine" style="padding:30px">
+   
+
+    <form onsubmit="return checkform(this);" id="trueanswer" >
+    <div class="contain">
+        <div style="text-align:center">
+          <h2>Contact Us</h2>
+      
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="images/aubgarden.jpg" style="width:100%">
+          </div>
+          <div class="column">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Your company..">
+              <label for="Email">Email</label>
+              <input type="text" id="password" name="password" placeholder="Your password..">
+              <label for="Email">Passwrd</label>
+              <input type="text" id="email" name="email" placeholder="Your email..">
+              <label for="phone">Phone</label>
+              <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="subject..">
+            
+            
+            
+       
+              
+      
+              
+         
+              
+              
+      <label for="comments">Comments</label>
+              <textarea id="comments" name="comments" placeholder="Write something.." style="height:170px"></textarea>
+          
+
+
+
+              <html><head>
+                <style>.capbox {
+                 background-color: #F0FFF0;
+                 border-width: 0px 12px 0px 0px;
+                 display: inline-block;
+                 *display: inline; zoom: 1; /* FOR IE7-8 */
+                 padding: 8px 40px 8px 8px;
+                 }
+                
+                .capbox-inner {
+                 font: bold 11px arial, sans-serif;
+                 color: #000000;
+                 background-color: #F0FFF0;;
+                 margin: 20px auto 0px auto;
+                 padding: 3px;
+                 -moz-border-radius: 4px;
+                 -webkit-border-radius: 4px;
+                 border-radius: 4px;
+                 }
+                
+                #CaptchaDiv {
+                 width:200px;
+                 height:60px;
+                 border:1px solid #d3d3d3;
+                 color: green;
+                 background-color: #FFFFFF;
+                 padding: 4px;
+                 -moz-border-radius: 4px;
+                 -webkit-border-radius: 4px;
+                 border-radius: 4px;
+                 }
+                
+                #CaptchaInput { margin: 10px 0px 1px 0px; width: 135px; }
+                </style>
+                </head>
+                
+            
+                <body><h1>This is Captcha</h1>
+                <form  onsubmit="return checkform(this);" id="trueanswer" >
+                
+                <br>
+                <div class="capbox">
+                
+                <canvas id="CaptchaDiv"></canvas>
+                
+                <div class="capbox-inner" readonly="true">
+                Type the above number:<br>
+                
+                <input type="hidden" id="txtCaptcha">
+                <input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
+                <input type="submit" (click)="ValidCaptcha()" value="Submit">
+                </div>
+                </div>
+                <br><br>
+                </form>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                <script type="text/javascript">
+                
+                // Captcha Script
+                
+                function checkform(theform){
+            
+                
+                var why = "";
+                
+                if(theform.CaptchaInput.value == ""){
+                why += "- Please Enter CAPTCHA Code.\n";
+                }
+                if(theform.CaptchaInput.value != ""){
+                if(ValidCaptcha(theform.CaptchaInput.value) == false){
+                why += "- The CAPTCHA Code Does Not Match.\n";
+                }
+                }
+                if(why != ""){
+                alert(why);
+                return false;
+                }
+                }
+                
+                var a = Math.floor(Math.random() * 100000);
+                var code = a.toString();
+                var z = document.getElementById("CaptchaDiv");
+                var ctx = z.getContext("2d");
+                
+                var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+                grd.addColorStop(0,"gray");
+                grd.addColorStop(1,"white");
+                
+                ctx.fillStyle=grd;
+                ctx.fillRect(0,0,200,100);
+                ctx.font = "60px Arial";
+                ctx.strokeText(code,10,50);
+                document.getElementById("txtCaptcha").value = code;
+                document.getElementById("CaptchaDiv").innerHTML = code;
+                
+                // Validate input against the generated number
+                function ValidCaptcha(){
+                var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
+                var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
+                if (str1 == str2){
+                    document.getElementById('trueanswer').method = "get";
+                    document.getElementById('trueanswer').action = "/yessendemail";
+                    setTimeout(function(){ alert("email sent"); }, 2000);
+                return true;
+                }else{
+                return false;
+                }
+                }
+                
+                // Remove the spaces from the entered and generated code
+                function removeSpaces(string){
+                return string.split(' ').join('');
+                }
+                </script>
+     
+          </div>
+        </div>
+      </div>
+
+</form>
+	</div>
+</div>
+
+
+    <div class="w3hubs-footer">
+        <div class="w3hubs-nav1">
+          <ul>
+
+            <li><a href="https://www.aub.edu.lb/Libraries/Services/Pages/Copyright.aspx">© Copyright</a></li>
+            <li><a href="https://www.mongodb.com/">Citing the plant Database</a></li>
+            <li><a href="acknolgement.html">Acknowledgments</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+              
+        </ul>
+        </div>
+     </div>
+
+
+
+
+</body>
+</html>

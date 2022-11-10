@@ -1,0 +1,43 @@
+.list_it a:hover{ 
+
+	color: green; 
+
+
+} 
+
+.list_it a{ 
+	
+	
+	color: black;
+	text-decoration: none; 
+} 
+
+li{ 
+	list-style-type: none;
+}
+
+
+
+h1{ 
+	color: 	#2E8B57;
+	position: relative; 
+	left: 35px;
+	
+
+} 
+
+.main{ 
+
+column-count: 3;
+}
+
+.bord{ 
+position: relative; 
+left: 50px; 
+top: -35px; 
+width: 750px;
+margin-bottom: 15px; 
+border: 2px solid #F0FFF0;
+background-color: #F5F5DC;
+border-radius: 15px 50px 30px; 
+}

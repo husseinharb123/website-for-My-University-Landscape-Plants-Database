@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html >
+<head>  
+<title>my project</title>
+  <link rel="stylesheet" href="home.css">
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="nav_search.css">
+  <link rel="stylesheet" href="country.css">
+  <link rel="stylesheet" href="searchbycriteria.css">
+  <script src="plantidentifcation.js"></script>
+    
+
+</head>
+<body>
+    <div class="flexbox"></div>
+<header id="headpage">
+    <a href="http://www.aub.edu.lb/fafs/Pages/default.aspx" class="logo">
+        <img src="images/aub-log1.png">
+        <span class="fontsmall">Landscape Design & Ecosystem Management</span>
+        <span class="fontnormal">Faculty of Agriculture & Food Sciences</span>
+
+    </a>
+
+    <nav>
+		<ul> 
+
+			<li>
+                <a href="/">Home <i class="icon-chevron-down"></i></a> 
+				<ul>
+					<li><a href="searchbyname.html" >Search By Name</a></li>
+					<li><a href="plantidentifaction.html">Plant identfication</a></li>
+                    <li><a href="editpage.html">Edit plant Database</a></li>
+				</ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="usefulink.html">Useful Links</a></li>
+			<li><a href="/imagegallary">Image Gallery</a></li>
+	
+			<li><a href="Popular_Plant_Categories.html">Popular Plant Categories</a></li>
+			<li><a href="gloccery.html">Glossary</a></li>
+			<li><a href="contactus.html">Contact</a></li>
+		</ul>
+	</nav>
+
+    <div id="socialmedia">
+        <a href="https://twitter.com/AUB_Lebanon?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+        <a href="https://www.facebook.com/aub.edu.lb/" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+        <a href="http://www.aub.edu.lb/Libraries/Pages/default.aspx" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+    </div>
+
+</header>    
+<div id="mainimg"></div>   
+
+<div id="part2flex">
+    <div id="divofimges">
+
+        <a href="searchbyname.html"> <div  class="searchtype" >
+        <img src="images/search1.jpg" alt="" >
+        <h3>Search By Name</h3>
+        </div></a>
+        <a href="plantidentifaction.html"> <div  class="searchtype">
+            <img src="images/icon.png" alt="" srcset="">
+            <h3>Plant identfication</h3>
+        </div></a>
+        <a href="editpage.html"><div  class="searchtype">
+            <img src="images/edit.png" alt="" srcset="">
+            <h3>Edit plant Database</h3>
+        </div></a>
+           
+        </div>
+<div id="searchengine" style="text-align:center">
+    <nav>
+        <ul> <li><a id="1" name="step1" > country</a></li>
+            <li><a  id="2" name="step-2">Basic info</a></li>
+            <li><a  id="3" name="step-3">uses</a></li>
+            <li><a  id="4" name="step-4">Size/Shape</a></li>
+            <li><a  id="5" name="step-5">Leaf</a></li>
+            <li><a id="6" name="step-6">Flower</a></li>
+            <li><a id="7" name="step-7">Fruit</a></li>
+            <li><a id="8" name="step-8">Trunck</a></li>
+            <li><a id="9" name="step-9">management</a></li>
+			
+			
+		</ul>
+	</nav>
+
+<form action="/result2" method="get">
+
+<input type="text" name="country" id="country" style="display:none">
+<input type="text" name="pLanttype" id="pLanttype" style="display:none">
+<input type="text" name="light" id="light" style="display:none">
+<input type="text" name="soil" id="soil" style="display:none">
+<input type="text" name="water" id="water" style="display:none">
+<input type="text" name="canopyshape" id="canopyshape" style="display:none">
+<input type="text" name="leafcolorgrowing" id="leafcolorgrowing" style="display:none">
+<input type="text" name="leafcolorchanging" id="leafcolorchanging" style="display:none">
+<input type="text" name="flowerColor" id="flowerColor" style="display:none">
+<input type="text" name="fruitcolor" id="fruitcolor" style="display:none">
+
+<div class = "frame" id="step1" >
+<p id = "pi"> Choose Country</p> 
+<div class =  "imgborder">
+<img src="images\algeria.png" alt="Avatar" >
+<p id = "country">Algeria</p>
+</div> 
+<div class =  "imgborder">
+<img src="images\djibouti.png" alt="Avatar" >
+<p id = "country">Djibouti</p>
+
+</div> 
+<div class =  "imgborder">
+<img src="images\egypt.png" alt="Avatar" >
+<p id = "country">Egypt</p>
+</div> 
+
+<div class =  "imgborder">
+<img src="images\iraq.jpg" alt="Avatar" >
+<p id = "country">Iraq</p>
+</div>
+
+<div class =  "imgborder">
+<img src="images\jordan.png" alt="Avatar" >
+<p id = "country">Jordan</p>
+</div> 
+
+<div class =  "imgborder">
+<img src="images\kuwait.png" alt="Avatar" >
+<p id = "country">Kuwait</p>
+</div> 
+
+<div class =  "imgborder">
+<img src="images\lebanon.png" alt="Avatar" >
+<p id = "country">Lebanon</p>
+</div> 
+
+<div class =  "imgborder">
+<img src="images\libya.jpg" alt="Avatar" >
+<p id = "country">Libya</p>
+</div> 
+
+<div class =  "imgborder">
+<img src="images\mauritania.png" alt="Avatar" >
+<p id = "country">Mauritania</p>
+</div> 
+
+<div class =  "imgborder">
+<img src="images\morroco.png" alt="Avatar" >
+<p id = "country">Morocco</p>
+</div> 
+
+<div class =  "imgborder">
+<img src="images\oman.png" alt="Avatar" >
+<p id = "country">Oman</p>
+</div> 
+
+<div class =  "imgborder">
+<img src="images\palestine.png" alt="Avatar" >
+<p id = "country">Palestine</p>
+</div> 
+
+<div class =  "imgborder">
+<img src="images\qatar.png" alt="Avatar" >
+<p id = "country">Qatar</p>
+</div>
+
+<div class =  "imgborder">
+<img src="images\SA.png" alt="Avatar" >
+<p id = "country">Saudi Arabia</p>
+</div>  
+
+<div class =  "imgborder">
+<img src="images\somalia.png" alt="Avatar" >
+<p id = "country">Somalia</p>
+</div> 
+
+<div class =  "imgborder">
+<img src="images\sudan.png" alt="Avatar" >
+<p id = "country">Sudan</p>
+</div> 
+
+<div class =  "imgborder">
+<img src="images\syria.png" alt="Avatar" >
+<p id = "country">Syria</p>
+</div> 
+
+<div class =  "imgborder">
+<img src="images\tunisia.png" alt="Avatar" >
+<p id = "country">Tunisia</p>
+</div> 
+
+<div class =  "imgborder">
+<img src="images\uae.png" alt="Avatar" >
+<p id = "country">UAE</p>
+</div> 
+
+<div class =  "imgborder">
+<img src="images\yemen.png" alt="Avatar" >
+<p id = "country">Yemen</p>
+</div> 
+</div> 
+
+
+
+
+
+
+<div class="body_part" >
+    <div class="wrapper">
+        <div class="main_contain">
+            <div id="wizard1" class="swMain">
+
+                <div id="step-2" class="steps" >
+  
+                        <div class="top_des">
+
+                        </div>
+                        <div class="col_left width407">
+                            <div class="plant_sec" id="plant_sec1">
+                                <h1><a href="/Pages/Glossary/#-P-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Plant Type</a></h1>
+
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Cactus.isSelected() }, click: plantType.Cactus.Click">
+                                    <span>
+                                        <img src="images\planttype\Cactus.png" alt="">
+                                    </span>
+                                    <p>Cactus/Succulent</p>
+                                </div>
+
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Groundcover.isSelected() }, click: plantType.Groundcover.Click">
+                                    <span>
+                                        <img src="images\planttype\groundedcover.png" alt="">
+                                    </span>
+                                    <p>Ground Cover</p>
+                                </div>
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Lawn.isSelected() }, click: plantType.Lawn.Click">
+                                    <span>
+                                        <img src="images\planttype\lawn.png" alt="">
+                                    </span>
+                                    <p>Lawn</p>
+                                </div>
+
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Palm.isSelected() }, click: plantType.Palm.Click">
+                                    <span>
+                                        <img src="images\planttype\palm.png" alt="">
+                                    </span>
+                                    <p>Palm</p>
+                                </div>
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Shrub.isSelected() }, click: plantType.Shrub.Click">
+                                    <span>
+                                        <img src="images\planttype\shrub.png" alt="">
+                                    </span>
+                                    <p>Shrub</p>
+                                </div>
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Tree.isSelected() }, click: plantType.Tree.Click">
+                                    <span>
+                                        <img src="images\planttype\tree.png" alt="">
+                                    </span>
+                                    <p>Tree</p>
+                                </div>
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Vine.isSelected() }, click: plantType.Vine.Click">
+                                    <span>
+                                        <img src="images\planttype\vine.png" alt="">
+                                    </span>
+                                    <p>Vine</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col_right width279">
+                            <div class="plant_sec" id="plant_sec2">
+                                <h1><a href="/Pages/Glossary/#-L-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Light</a></h1>
+                                <div class="light_cat" data-bind="css: { plant_cat_selected: light.Full.isSelected() }, click: light.Full.Click">
+                                    <span>
+                                        <img src="images\light\full.png" alt="">
+                                    </span>
+                                    <p>Full</p>
+                                </div>
+                                <div class="light_cat" data-bind="css: { plant_cat_selected: light.Part.isSelected() }, click: light.Part.Click">
+                                    <span>
+                                        <img src="images\light\part.png" alt="">
+                                    </span>
+                                    <p>Part</p>
+                                </div>
+                                <div class="light_cat" data-bind="css: { plant_cat_selected: light.Shade.isSelected() }, click: light.Shade.Click">
+                                    <span>
+                                        <img src="images\light\shade.png" alt="">
+                                    </span>
+                                    <p>Shade</p>
+                                </div>
+                            </div>
+                            <div class="plant_sec" id="plant_sec3">
+                                <h1><a href="/Pages/Glossary/#-S-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Soil</a></h1>
+                                <div class="Soil_cat" data-bind="css: { plant_cat_selected: soil.Clay.isSelected() }, click: soil.Clay.Click">
+                                    <span>
+                                        <img src="images\soil\clay.png" alt="">
+                                    </span>
+                                    <p>Clay</p>
+                                </div>
+                                <div class="Soil_cat" data-bind="css: { plant_cat_selected: soil.Sand.isSelected() }, click: soil.Sand.Click">
+                                    <span>
+                                        <img src="images\soil\sand.png" alt="">
+                                    </span>
+                                    <p>Sand</p>
+                                </div>
+                                <div class="Soil_cat" data-bind="css: { plant_cat_selected: soil.Loam.isSelected() }, click: soil.Loam.Click">
+                                    <span>
+                                        <img src="images\soil\loam.png" alt="">
+                                    </span>
+                                    <p>Loam</p>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-S-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Soil PH</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul class="li100">
+                                        <li>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" data-bind=" checked: soilPh.Acidic.isSelected">
+                                                <label for="checkboxG4" class="css-label2">Acidic <small>(pH&lt;7)</small></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG5" id="checkboxG5" class="css-checkbox" data-bind=" checked: soilPh.Neutral.isSelected">
+                                                <label for="checkboxG5" class="css-label2">Neutral <small>(pH=7)</small></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG5" id="checkboxG6" class="css-checkbox" data-bind=" checked: soilPh.Alkaline.isSelected">
+                                                <label for="checkboxG6" class="css-label2">Alkaline <small>(pH&gt;7)</small></label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_right width295">
+                            <div class="plant_sec" id="plant_sec4">
+                                <h1><a href="/Pages/Glossary/#-W-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Water</a></h1>
+                                <div class="water_cat" data-bind="css: { plant_cat_selected: water.High.isSelected() }, click: water.High.Click">
+                                    <span>
+                                        <img src="images\water\high.png" alt="">
+                                    </span>
+                                    <p>High</p>
+                                </div>
+                                <div class="water_cat" data-bind="css: { plant_cat_selected: water.Moderate.isSelected() }, click: water.Moderate.Click">
+                                    <span>
+                                        <img src="images\water\moderate.png" alt="">
+                                    </span>
+                                    <p>Moderate</p>
+                                </div>
+                                <div class="water_cat" data-bind="css: { plant_cat_selected: water.Low.isSelected() }, click: water.Low.Click">
+                                    <span>
+                                        <img src="images\water\low.png" alt="">
+                                    </span>
+                                    <p>Low</p>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1>Tolerance</h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span class="redio_title"><a href="/Pages/Glossary/#-H-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Heat</a></span> 
+                                            <span>
+                                                <input type="radio" name="radio_heatTolerance" id="radio1" class="css-checkbox" value="Yes" data-bind="checked: heatTolerance" />
+                                                <label for="radio1" class="css-label">Yes</label>
+                                            </span>
+                                            <span>
+                                                <input type="radio" name="radio_heatTolerance" id="radio2" class="css-checkbox" value="No" data-bind="checked: heatTolerance" />
+                                                <label for="radio2" class="css-label">No</label>
+                                            </span>
+
+                                        </li>
+
+                                        <li>
+                                            <span class="redio_title"><a href="/Pages/Glossary/#-D-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Drought</a></span> 
+                                            <span>
+                                                <input type="radio" name="radio_droughtTolerance" id="radio3" class="css-checkbox" value="Yes" data-bind=" checked: droughtTolerance"/>
+                                                <label for="radio3" class="css-label">Yes</label>
+                                            </span>
+                                            <span>
+                                                <input type="radio" name="radio_droughtTolerance" id="radio4" class="css-checkbox" value="No" data-bind=" checked: droughtTolerance"/>
+                                                <label for="radio4" class="css-label">No</label>
+                                            </span>
+
+                                        </li>
+                                        <li>
+                                            <span class="redio_title"><a href="/Pages/Glossary/#-F-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Frost</a></span> 
+                                            <span>
+                                                <input type="radio" name="radio_frostTolerance" id="radio5" class="css-checkbox" value="Yes" data-bind=" checked: frostTolerance"/>
+                                                <label for="radio5" class="css-label">Yes</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_frostTolerance" id="radio6" class="css-checkbox" value="No" data-bind=" checked: frostTolerance"/>
+                                                <label for="radio6" class="css-label">No</label>
+                                            </span>
+
+                                        </li> 
+                                        <li>
+                                            <span class="redio_title"><a href="/Pages/Glossary/#-S-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Salt</a></span> 
+                                            <span style="width: 17%">
+                                                <input type="radio" name="radio_saltTolerance" id="radio7" class="css-checkbox" value="Good" data-bind=" checked: saltTolerance"/>
+                                                <label for="radio7" class="css-label">Good</label>
+                                            </span><span style="width: 25%">
+                                                <input type="radio" name="radio_saltTolerance" id="radio8" class="css-checkbox" value="Moderate" data-bind=" checked: saltTolerance"/>
+                                                <label for="radio8" class="css-label">Moderate</label>
+                                            </span><span class="paddingR0" style="width: 20%">
+                                                <input type="radio" name="radio_saltTolerance" id="radio9" class="css-checkbox" value="Poor" data-bind=" checked: saltTolerance"/>
+                                                <label for="radio9" class="css-label">Poor</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-L-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Life Cycle</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_lifeCycle" id="radio10" class="css-checkbox" value="Annual" data-bind=" checked: lifeCycle">
+                                                <label for="radio10" class="css-label">Annual</label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_lifeCycle" id="radio11" class="css-checkbox" value="Perennial" data-bind=" checked: lifeCycle">
+                                                <label for="radio11" class="css-label">Perennial</label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_lifeCycle" id="radio12" class="css-checkbox" value="Biennial" data-bind=" checked: lifeCycle">
+                                                <label for="radio12" class="css-label">Biennial</label>
+                                            </span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+    
+                </div>
+                <div id="step-3" class="steps" id="step-3">
+        
+                        <div class="top_des">
+
+                        </div>
+                        <div class="col_left width625">
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-U-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Outdoor</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG7" id="checkboxG7" class="css-checkbox" data-bind=" checked: usage.Screen.isSelected">
+                                                <label for="checkboxG7" class="css-label2">Screen</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG8" id="checkboxG8" class="css-checkbox" value="helox"   data-bind=" checked: usage.Hedge.isSelected">
+                                                <label for="checkboxG8" class="css-label2">Hedge</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG9" id="checkboxG9" class="css-checkbox" data-bind=" checked: usage.BorderPlant.isSelected">
+                                                <label for="checkboxG9" class="css-label2">Border Plant</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG10" id="checkboxG10" class="css-checkbox" data-bind=" checked: usage.MassPlanting.isSelected">
+                                                <label for="checkboxG10" class="css-label2">Mass Planting</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG11" id="checkboxG11" class="css-checkbox" data-bind=" checked: usage.Specimen.isSelected">
+                                                <label for="checkboxG11" class="css-label2">Specimen</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG12" id="checkboxG12" class="css-checkbox" data-bind=" checked: usage.Street.isSelected">
+                                                <label for="checkboxG12" class="css-label2">Street</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-U-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Specialized</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG13" id="checkboxG13" class="css-checkbox" data-bind=" checked: usage.Topiary.isSelected">
+                                                <label for="checkboxG13" class="css-label2">Topiary</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG14" id="checkboxG14" class="css-checkbox" data-bind=" checked: usage.Bonsai.isSelected">
+                                                <label for="checkboxG14" class="css-label2">Bonsai</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG15" id="checkboxG15" class="css-checkbox" data-bind=" checked: usage.Espalier.isSelected">
+                                                <label for="checkboxG15" class="css-label2">Espalier</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG16" id="checkboxG16" class="css-checkbox" data-bind=" checked: usage.Indoor.isSelected">
+                                                <label for="checkboxG16" class="css-label2">Indoor</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG17" id="checkboxG17" class="css-checkbox" data-bind=" checked: usage.Container.isSelected">
+                                                <label for="checkboxG17" class="css-label2">Container</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG18" id="checkboxG18" class="css-checkbox" data-bind=" checked: usage.SportsField.isSelected">
+                                                <label for="checkboxG18" class="css-label2">Sports Field</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-U-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Native Environment</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG19" id="checkboxG19" class="css-checkbox" data-bind=" checked: usage.Shade.isSelected">
+                                                <label for="checkboxG19" class="css-label2">Shade</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG20" id="checkboxG20" class="css-checkbox" data-bind=" checked: usage.Windbreak.isSelected">
+                                                <label for="checkboxG20" class="css-label2">Windbreak</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG21" id="checkboxG21" class="css-checkbox" data-bind=" checked: usage.ErosionControl.isSelected">
+                                                <label for="checkboxG21" class="css-label2">Erosion Control</label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG22" id="checkboxG22" class="css-checkbox" data-bind=" checked: usage.PollutionTolerantUrban.isSelected">
+                                                <label for="checkboxG22" class="css-label2">Pollution Tolerant/ Urban</label>
+                                            </span>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG23" id="checkboxG23" class="css-checkbox" data-bind=" checked: usage.Reclamation.isSelected">
+                                                <label for="checkboxG23" class="css-label2">Reclamation</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG24" id="checkboxG24" class="css-checkbox" data-bind=" checked: usage.Wildlife.isSelected">
+                                                <label for="checkboxG24" class="css-label2">Wildlife</label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG244" id="checkboxG244" class="css-checkbox" data-bind=" checked: usage.NativeToLebanon.isSelected">
+                                                <label for="checkboxG244" class="css-label2">Native to Lebanon</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_right width370">
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-U-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Human Use</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG25" id="checkboxG25" class="css-checkbox" data-bind=" checked: usage.Edible.isSelected">
+                                                <label for="checkboxG25" class="css-label2">Edible</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG26" id="checkboxG26" class="css-checkbox" data-bind=" checked: usage.Medicinal.isSelected">
+                                                <label for="checkboxG26" class="css-label2">Medicinal</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG27" id="checkboxG27" class="css-checkbox" data-bind=" checked: usage.CutFlowers.isSelected">
+                                                <label for="checkboxG27" class="css-label2">Cut Flower/ Arrangement</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-U-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Building</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG28" id="checkboxG28" class="css-checkbox" data-bind=" checked: usage.IntensiveGreenRoof.isSelected">
+                                                <label for="checkboxG28" class="css-label2">
+                                                    Intensive
+                                                    <br>
+                                                    Green Roof
+                                                </label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG29" id="checkboxG29" class="css-checkbox" data-bind=" checked: usage.ExtensiveGreenRoof.isSelected">
+                                                <label for="checkboxG29" class="css-label2">
+                                                    Extensive
+                                                    <br>
+                                                    Green Roof
+                                                </label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG30" id="checkboxG30" class="css-checkbox" data-bind=" checked: usage.Facade.isSelected">
+                                                <label for="checkboxG30" class="css-label2">Facade</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+                <div id="step-4" class="steps" >
+                        <div class="top_des">
+                            <p style="margin-top:5px">
+                            </p>
+                        </div>
+                        <div class="col_left width338">
+                            <div class="plant_sec" id="plant_sec5">
+                                <h1><a href="/Pages/Glossary/#-C-" target=" _blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Canopy Shape</a></h1>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Weeping.isSelected() }, click: plantShape.Weeping.Click">
+                                    <span>
+                                        <img src="images\canopyshape\weeping.png" alt="">
+                                    </span>
+                                    <p>Weeping</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Upright.isSelected() }, click: plantShape.Upright.Click">
+                                    <span>
+                                        <img src="images\canopyshape\upright.png" alt="">
+                                    </span>
+                                    <p>Upright/Erect</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Vase.isSelected() }, click: plantShape.Vase.Click">
+                                    <span>
+                                        <img src="images\canopyshape\vase.png" alt="">
+                                    </span>
+                                    <p>Vase</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Pyramidal.isSelected() }, click: plantShape.Pyramidal.Click">
+                                    <span>
+                                        <img src="images\canopyshape\pyramidal.png" alt="">
+                                    </span>
+                                    <p>Pyramidal</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Round.isSelected() }, click: plantShape.Round.Click">
+                                    <span>
+                                        <img src="images\canopyshape\round.png" alt="">
+                                    </span>
+                                    <p>Rounded</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Columnar.isSelected() }, click: plantShape.Columnar.Click">
+                                    <span>
+                                        <img src="images\canopyshape\columnar.png" alt="">
+                                    </span>
+                                    <p>Columnar</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.oval.isSelected() }, click: plantShape.oval.Click">
+                                    <span>
+                                        <img src="images\canopyshape\oval.png" alt="">
+                                    </span>
+                                    <p>Oval</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Palm.isSelected() }, click: plantShape.Palm.Click">
+                                    <span>
+                                        <img src="images\canopyshape\palm.png" alt="">
+                                    </span>
+                                    <p>Palm</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Spreading.isSelected() }, click: plantShape.Spreading.Click">
+                                    <span>
+                                        <img src="images\canopyshape\spreading.png" alt="">
+                                    </span>
+                                    <p>Spreading</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_right width279">
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-P-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Plant Height</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li style="font-weight: bold;">
+                                            <span style="width: 100px; padding: 15px 0px 0px 25px">
+                                                <img src="images\height.png" alt="">
+                                            </span> <span>
+                                                <input type="checkbox" name="checkboxG31" id="checkboxG31" class="css-checkbox" data-bind=" checked: plantHeightRange.OvTwentyThree.isSelected">
+                                                <label for="checkboxG31" class="css-label2 bgright">&gt;23 (m)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG32" id="checkboxG32" class="css-checkbox" data-bind=" checked: plantHeightRange.LeTwentyThree.isSelected">
+                                                <label for="checkboxG32" class="css-label2 bgright">15-23 (m)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG33" id="checkboxG33" class="css-checkbox" data-bind=" checked: plantHeightRange.LeFifteen.isSelected">
+                                                <label for="checkboxG33" class="css-label2 bgright">8-15 (m)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG34" id="checkboxG34" class="css-checkbox" data-bind=" checked: plantHeightRange.LeEight.isSelected">
+                                                <label for="checkboxG34" class="css-label2 bgright">5-8 (m)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG35" id="checkboxG35" class="css-checkbox" data-bind=" checked: plantHeightRange.LeFive.isSelected">
+                                                <label for="checkboxG35" class="css-label2 bgright">3-5 (m)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG159" id="checkboxG159" class="css-checkbox" data-bind=" checked: plantHeightRange.LeThree.isSelected">
+                                                <label for="checkboxG159" class="css-label2 bgright">1.5-3 (m)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG36" id="checkboxG36" class="css-checkbox" data-bind=" checked: plantHeightRange.LeOnePointFive.isSelected">
+                                                <label for="checkboxG36" class="css-label2 bgright">1-1.5 (m)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG37" id="checkboxG37" class="css-checkbox" data-bind=" checked: plantHeightRange.LeOne.isSelected">
+                                                <label for="checkboxG37" class="css-label2 bgright">0.5-1 (m)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG38" id="checkboxG38" class="css-checkbox" data-bind=" checked: plantHeightRange.LeZeroFive.isSelected">
+                                                <label for="checkboxG38" class="css-label2 bgright">0-0.5 (m)</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-P-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Plant Spread</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li style="text-align: center; padding-bottom: 10px;">
+                                            <span style="width: 200px;">
+                                                <img src="images\width.png" alt="">
+                                            </span>
+                                        </li>
+                                        <li style="font-weight: bold;">
+                                            <span>
+                                                <input type="checkbox" name="checkboxG39" id="checkboxG39" class="css-checkbox" data-bind=" checked: plantSpreadRange.OverFifteen.isSelected">
+                                                <label for="checkboxG39" class="css-label2">&gt;15 (m)</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG40" id="checkboxG40" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessFifteen.isSelected">
+                                                <label for="checkboxG40" class="css-label2">10-15(m)</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG41" id="checkboxG41" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessTen.isSelected">
+                                                <label for="checkboxG41" class="css-label2">8-10 (m)</label>
+                                            </span>
+                                        </li>
+                                        <li style="font-weight: bold;">
+                                            <span>
+                                                <input type="checkbox" name="checkboxG42" id="checkboxG42" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessEight.isSelected">
+                                                <label for="checkboxG42" class="css-label2">5-8 (m)</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG43" id="checkboxG43" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessFive.isSelected">
+                                                <label for="checkboxG43" class="css-label2">3-5 (m)</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG44" id="checkboxG44" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessThree.isSelected">
+                                                <label for="checkboxG44" class="css-label2">1.5-3 (m)</label>
+                                            </span>
+                                        </li>
+                                        <li style="font-weight: bold;">
+                                            <span>
+                                                <input type="checkbox" name="checkboxG455" id="checkboxG455" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessOnePointFive.isSelected">
+                                                <label for="checkboxG455" class="css-label2">1-1.5 (m)</label>
+                                            </span>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG45" id="checkboxG45" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessOne.isSelected">
+                                                <label for="checkboxG45" class="css-label2">0.5-1 (m)</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG477" id="checkboxG477" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessZeroFive.isSelected">
+                                                <label for="checkboxG477" class="css-label2">0-0.5 (m)</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_right width360">
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-T-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Time to Ultimate Height</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li style="text-align: center; padding-bottom: 10px;">
+                                            <img src="images\time.png" alt="">
+                                        </li>
+                                        <li class="plant_time">
+                                            <span>
+                                                <input type="checkbox" name="checkboxG47" id="checkboxG47" class="css-checkbox" data-bind=" checked: timeToFullGrowthRange.LessOneY.isSelected">
+                                                <label for="checkboxG47" class="css-label2">0-1 (years)</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG48" id="checkboxG48" class="css-checkbox" data-bind=" checked: timeToFullGrowthRange.LessTowY.isSelected">
+                                                <label for="checkboxG48" class="css-label2">1-2 (years)</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG49" id="checkboxG49" class="css-checkbox" data-bind=" checked: timeToFullGrowthRange.LessFiveY.isSelected">
+                                                <label for="checkboxG49" class="css-label2">2-5 (years)</label>
+                                            </span>
+                                        </li>
+                                        <li class="plant_time">
+                                            <span>
+                                                <input type="checkbox" name="checkboxG50" id="checkboxG50" class="css-checkbox" data-bind=" checked: timeToFullGrowthRange.LessTenY.isSelected">
+                                                <label for="checkboxG50" class="css-label2">5-10 (years)</label>
+                                            </span>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG51" id="checkboxG51" class="css-checkbox" data-bind=" checked: timeToFullGrowthRange.LessTwentyY.isSelected">
+                                                <label for="checkboxG51" class="css-label2">10-20 (years)</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG52" id="checkboxG52" class="css-checkbox" data-bind=" checked: timeToFullGrowthRange.LessFiftyY.isSelected">
+                                                <label for="checkboxG52" class="css-label2">20-50 (years)</label>
+                                            </span>
+                                        </li>
+                                        <li class="plant_time">
+                                            <span>
+                                                <input type="checkbox" name="checkboxG53" id="checkboxG53" class="css-checkbox" data-bind=" checked: timeToFullGrowthRange.OverFiftyY.isSelected">
+                                                <label for="checkboxG53" class="css-label2">&gt;50 (years)</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec" style="margin-top: 77px;">
+                                <h1><a href="/Pages/Glossary/#-G-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Growth Rate</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li style="text-align: center; padding-bottom: 10px;">
+                                            <img src="images\rates.png" alt="">
+                                        </li>
+                                        <li class="plant_time2" style="margin-top: 18px;">
+                                            <span>
+                                                <input type="radio" name="radio_growthRate" id="radio13" class="css-checkbox" value="Slow" data-bind=" checked: growthRate">
+                                                <label for="radio13" class="css-label">Slow</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_growthRate" id="radio14" class="css-checkbox" value="Moderate" data-bind=" checked: growthRate">
+                                                <label for="radio14" class="css-label">Moderate</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_growthRate" id="radio15" class="css-checkbox" value="Fast" data-bind=" checked: growthRate">
+                                                <label for="radio15" class="css-label">Fast</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+                <div id="step-5" class="steps" >
+   
+                        <div class="top_des">
+
+                        </div>
+                        <div class="col_left">
+                            <div class="plant_sec" id="plant_sec6">
+                                <h1><a href="/Pages/Glossary/#-L-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Color in Growing Season</a></h1>
+                                <div class="color_cat" data-bind="css: { plant_cat_selected: colorGrowingSeason.Green.isSelected() }, click: colorGrowingSeason.Green.Click">
+                                    <span>
+                                        <img src="images\leafcolor\green.png" alt="">
+                                    </span>
+                                    <p>Green</p>
+                                </div>
+                                <div class="color_cat" data-bind="css: { plant_cat_selected: colorGrowingSeason.Purple.isSelected() }, click: colorGrowingSeason.Purple.Click">
+                                    <span>
+                                        <img src="images\leafcolor\purple.png" alt="">
+                                    </span>
+                                    <p>Purple</p>
+                                </div>
+                                <div class="color_cat" data-bind="css: { plant_cat_selected: colorGrowingSeason.Red.isSelected() }, click: colorGrowingSeason.Red.Click">
+                                    <span>
+                                        <img src="images\leafcolor\red.png" alt="">
+                                    </span>
+                                    <p>Red</p>
+                                </div>
+                                <div class="color_cat" data-bind="css: { plant_cat_selected: colorGrowingSeason.Yellow.isSelected() }, click: colorGrowingSeason.Yellow.Click">
+                                    <span>
+                                        <img src="images\leafcolor\yellow.png" alt="">
+                                    </span>
+                                    <p>Yellow</p>
+                                </div>
+                                <div class="color_cat" data-bind="css: { plant_cat_selected: colorGrowingSeason.BlueGreen.isSelected() }, click: colorGrowingSeason.BlueGreen.Click">
+                                    <span>
+                                        <img src="images\leafcolor\blue.png" alt="">
+                                    </span>
+                                    <p style="padding-top: 0px;">Blue</p>
+                                </div>
+                                <div class="color_cat clear" data-bind="css: { plant_cat_selected: colorGrowingSeason.Silver.isSelected() }, click: colorGrowingSeason.Silver.Click">
+                                    <span>
+                                        <img src="images\leafcolor\silver.png" alt="">
+                                    </span>
+                                    <p>Silver</p>
+                                </div>
+                                <div class="color_cat" data-bind="css: { plant_cat_selected: colorGrowingSeason.Variegated.isSelected() }, click: colorGrowingSeason.Variegated.Click">
+                                    <span>
+                                        <img style="height: 36px; width: 37px" src="images\leafcolor\variegat.png" alt="">
+                                    </span>
+                                    <p>Variegated</p>
+                                </div>
+                            </div>
+                            <div class="plant_sec" id="plant_sec7">
+                                <h1><a href="/Pages/Glossary/#-L-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Color in Changing Season</a></h1>
+                                <div class="color_cat2" data-bind="css: { plant_cat_selected: colorChangingSeason.Green.isSelected() }, click: colorChangingSeason.Green.Click">
+                                    <span>
+                                        <img src="images\leafcolor\green.png" alt="">
+                                    </span>
+                                    <p>Green</p>
+                                </div>
+                                <div class="color_cat2" data-bind="css: { plant_cat_selected: colorChangingSeason.Purple.isSelected() }, click: colorChangingSeason.Purple.Click">
+                                    <span>
+                                        <img src="images\leafcolor\purple.png" alt="">
+                                    </span>
+                                    <p>Purple</p>
+                                </div>
+                                <div class="color_cat2" data-bind="css: { plant_cat_selected: colorChangingSeason.Red.isSelected() }, click: colorChangingSeason.Red.Click">
+                                    <span>
+                                        <img src="images\leafcolor\red.png" alt="">
+                                    </span>
+                                    <p>Red</p>
+                                </div>
+                                <div class="color_cat2" data-bind="css: { plant_cat_selected: colorChangingSeason.Yellow.isSelected() }, click: colorChangingSeason.Yellow.Click">
+                                    <span>
+                                        <img src="images\leafcolor\yellow.png" alt="">
+                                    </span>
+                                    <p>Yellow</p>
+                                </div>
+                                <div class="color_cat2" data-bind="css: { plant_cat_selected: colorChangingSeason.Orange.isSelected() }, click: colorChangingSeason.Orange.Click">
+                                    <span>
+                                        <img src="images\leafcolor\orange.png" alt="">
+                                    </span>
+                                    <p>Orange</p>
+                                </div>
+                                <div class="color_cat2 clear" data-bind="css: { plant_cat_selected: colorChangingSeason.Brown.isSelected() }, click: colorChangingSeason.Brown.Click">
+                                    <span>
+                                        <img src="images\leafcolor\brown.png" alt="">
+                                    </span>
+                                    <p>Brown</p>
+                                </div>
+                                <div class="color_cat2" data-bind="css: { plant_cat_selected: colorChangingSeason.Copper.isSelected() }, click: colorChangingSeason.Copper.Click">
+                                    <span>
+                                        <img src="images\leafcolor\copper.png" alt="">
+                                    </span>
+                                    <p>Copper</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_right">
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-L-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Persistence</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_leafPersistance" id="radio16" class="css-checkbox" value="Evergreen" data-bind=" checked: leafPersistance">
+                                                <label for="radio16" class="css-label">Evergreen</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_leafPersistance" id="radio17" class="css-checkbox" value="Semi Evergreen" data-bind=" checked: leafPersistance">
+                                                <label for="radio17" class="css-label">Semi Evergreen</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_leafPersistance" id="radio18" class="css-checkbox" value="Deciduous" data-bind=" checked: leafPersistance">
+                                                <label for="radio18" class="css-label">Deciduous</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-L-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Scent</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_scent" id="radio19" class="css-checkbox" value="Pleasant" data-bind=" checked: scent">
+                                                <label for="radio19" class="css-label">Pleasant</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_scent" id="radio20" class="css-checkbox" value="Unpleasant" data-bind=" checked: scent">
+                                                <label for="radio20" class="css-label">Unpleasant</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_scent" id="radio21" class="css-checkbox" value="No Fragrance" data-bind=" checked: scent">
+                                                <label for="radio21" class="css-label">No Fragrance</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+   
+                </div>
+                <div id="step-6" class="steps" >
+    
+                        <div class="top_des">
+
+                        </div>
+                        <div class="col_left">
+                            <div class="plant_sec" id="plant_sec8">
+                                <h1><a href="/Pages/Glossary/#-F-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Color</a></h1>
+                                <div class="color_flower" data-bind="css: { plant_cat_selected: flowerColor.White.isSelected() }, click: flowerColor.White.Click">
+                                    <span>
+                                        <img src="images\plantcolor\white.png" alt="">
+                                    </span>
+                                    <p>White/Creamy</p>
+                                </div>
+                                <div class="color_flower" data-bind="css: { plant_cat_selected: flowerColor.Pink.isSelected() }, click: flowerColor.Pink.Click">
+                                    <span>
+                                        <img src="images\plantcolor\pink.png" alt="">
+                                    </span>
+                                    <p>Pink</p>
+                                </div>
+                                <div class="color_flower" data-bind="css: { plant_cat_selected: flowerColor.Purple.isSelected() }, click: flowerColor.Purple.Click">
+                                    <span>
+                                        <img src="images\plantcolor\purple.png" alt="">
+                                    </span>
+                                    <p>Purple</p>
+                                </div>
+                                <div class="color_flower" data-bind="css: { plant_cat_selected: flowerColor.Blue.isSelected() }, click: flowerColor.Blue.Click">
+                                    <span>
+                                        <img src="images\plantcolor\blue.png" alt="">
+                                    </span>
+                                    <p>Blue</p>
+                                </div>
+                                <div class="color_flower" data-bind="css: { plant_cat_selected: flowerColor.Red.isSelected() }, click: flowerColor.Red.Click">
+                                    <span>
+                                        <img src="images\plantcolor\red.png" alt="">
+                                    </span>
+                                    <p>Red</p>
+                                </div>
+                                <div class="color_flower" data-bind="css: { plant_cat_selected: flowerColor.Green.isSelected() }, click: flowerColor.Green.Click">
+                                    <span>
+                                        <img src="images\plantcolor\green.png" alt="">
+                                    </span>
+                                    <p>Green</p>
+                                </div>
+                                <div class="color_flower" data-bind="css: { plant_cat_selected: flowerColor.Yellow.isSelected() }, click: flowerColor.Yellow.Click">
+                                    <span>
+                                        <img src="images\plantcolor\yellow.png" alt="">
+                                    </span>
+                                    <p>Yellow</p>
+                                </div>
+                                <div class="color_flower" data-bind="css: { plant_cat_selected: flowerColor.Orange.isSelected() }, click: flowerColor.Orange.Click">
+                                    <span>
+                                        <img src="images\plantcolor\orange.png" alt="">
+                                    </span>
+                                    <p>Orange</p>
+                                </div>
+                                <div class="color_flower" data-bind="css: { plant_cat_selected: flowerColor.Brown.isSelected() }, click: flowerColor.Brown.Click">
+                                    <span>
+                                        <img src="images\plantcolor\brown.png" alt="">
+                                    </span>
+                                    <p>Brown</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_right">
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-F-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Scent</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_flowerScent" id="radio22" class="css-checkbox" value="Pleasant" data-bind=" checked: flowerScent">
+                                                <label for="radio22" class="css-label">Pleasant</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_flowerScent" id="radio23" class="css-checkbox" value="Unpleasant" data-bind=" checked: flowerScent">
+                                                <label for="radio23" class="css-label">Unpleasant</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_flowerScent" id="radio24" class="css-checkbox" value="No Fragrance" data-bind=" checked: flowerScent">
+                                                <label for="radio24" class="css-label">No Fragrance</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-F-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Season</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_flowerSeason" id="radio25" class="css-checkbox" value="Spring" data-bind=" checked: flowerSeason">
+                                                <label for="radio25" class="css-label">Spring</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_flowerSeason" id="radio26" class="css-checkbox" value="Summer" data-bind=" checked: flowerSeason">
+                                                <label for="radio26" class="css-label">Summer</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_flowerSeason" id="radio27" class="css-checkbox" value="Fall" data-bind=" checked: flowerSeason">
+                                                <label for="radio27" class="css-label">Fall</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_flowerSeason" id="radio28" class="css-checkbox" value="Winter" data-bind=" checked: flowerSeason">
+                                                <label for="radio28" class="css-label">Winter</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_flowerSeason" id="radio29" class="css-checkbox" value="Year Round" data-bind=" checked: flowerSeason">
+                                                <label for="radio29" class="css-label">Year Round</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-F-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Showiness</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_flowerShowiness" id="radio30" class="css-checkbox" value="Yes" data-bind=" checked: flowerShowiness">
+                                                <label for="radio30" class="css-label">Yes</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_flowerShowiness" id="radio31" class="css-checkbox" value="No" data-bind=" checked: flowerShowiness">
+                                                <label for="radio31" class="css-label">No</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+ 
+                </div>
+                <div id="step-7" class="steps" >
+                        <div class="top_des">
+                        </div>
+                        <div class="col_left">
+                            <div class="plant_sec" id="plant_sec9">
+                                <h1><a href="/Pages/Glossary/#-F-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Color</a></h1>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.Yellow.isSelected() }, click: fruitColor.Yellow.Click">
+                                    <span>
+                                        <img src="images\fruitcolor\yellow.png" alt="">
+                                    </span>
+                                    <p>Yellow</p>
+                                </div>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.Red.isSelected() }, click: fruitColor.Red.Click">
+                                    <span>
+                                        <img src="images\fruitcolor\red.png" alt="">
+                                    </span>
+                                    <p>Red</p>
+                                </div>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.Blue.isSelected() }, click: fruitColor.Blue.Click">
+                                    <span>
+                                        <img src="images\fruitcolor\blue.png" alt="">
+                                    </span>
+                                    <p>Blue</p>
+                                </div>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.White.isSelected() }, click: fruitColor.White.Click">
+                                    <span>
+                                        <img src="images\fruitcolor\white.png" alt="">
+                                    </span>
+                                    <p>White</p>
+                                </div>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.Pink.isSelected() }, click: fruitColor.Pink.Click">
+                                    <span>
+                                        <img src="images\fruitcolor\pink.png" alt="">
+                                    </span>
+                                    <p>Pink</p>
+                                </div>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.Purple.isSelected() }, click: fruitColor.Purple.Click">
+                                    <span>
+                                        <img src="images\fruitcolor\purple.png" alt="">
+                                    </span>
+                                    <p>Purple</p>
+                                </div>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.Green.isSelected() }, click: fruitColor.Green.Click">
+                                    <span>
+                                        <img src="images\fruitcolor\green.png" alt="">
+                                    </span>
+                                    <p>Green</p>
+                                </div>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.Grey.isSelected() }, click: fruitColor.Grey.Click">
+                                    <span>
+                                        <img src="images\fruitcolor\gray.png" alt="">
+                                    </span>
+                                    <p>Gray</p>
+                                </div>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.Orange.isSelected() }, click: fruitColor.Orange.Click">
+                                    <span>
+                                        <img src="images\fruitcolor\orange.png" alt="">
+                                    </span>
+                                    <p>Orange</p>
+                                </div>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.Brown.isSelected() }, click: fruitColor.Brown.Click">
+                                    <span>
+                                        <img src="images\fruitcolor\brown.png" alt="">
+                                    </span>
+                                    <p>Brown</p>
+                                </div>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.Black.isSelected() }, click: fruitColor.Black.Click">
+                                    <span>
+                                        <img src="images\fruitcolor\black.png" alt="">
+                                    </span>
+                                    <p>Black</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_right">
+                            <div class="plant_sec" style="width: 40%;">
+                                <h1><a href="/Pages/Glossary/#-F-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Showiness</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_fruitShowiness" id="radio32" class="css-checkbox" value="Yes" data-bind=" checked: fruitShowiness">
+                                                <label for="radio32" class="css-label">Yes</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_fruitShowiness" id="radio33" class="css-checkbox" value="No" data-bind=" checked: fruitShowiness">
+                                                <label for="radio33" class="css-label">No</label>
+                                            </span>
+      
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec" style="width: 40%;">
+                                <h1><a href="/Pages/Glossary/#-F-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Fruit Type</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_fruitTypeCategory" id="radio34" class="css-checkbox" value="Dry" data-bind=" checked: fruitTypeCategory">
+                                                <label for="radio34" class="css-label">Dry</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_fruitTypeCategory" id="radio35" class="css-checkbox" value="Fleshy" data-bind=" checked: fruitTypeCategory">
+                                                <label for="radio35" class="css-label">Fleshy</label>
+                                            </span>
+                                         
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-F-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Season</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_fruitSeason" id="radio36" class="css-checkbox" value="Spring" data-bind=" checked: fruitSeason">
+                                                <label for="radio36" class="css-label">Spring</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_fruitSeason" id="radio37" class="css-checkbox" value="Summer" data-bind=" checked: fruitSeason">
+                                                <label for="radio37" class="css-label">Summer</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_fruitSeason" id="radio38" class="css-checkbox" value="Fall" data-bind=" checked: fruitSeason">
+                                                <label for="radio38" class="css-label">Fall</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_fruitSeason" id="radio39" class="css-checkbox" value="Winter" data-bind=" checked: fruitSeason">
+                                                <label for="radio39" class="css-label">Winter</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_fruitSeason" id="radio40" class="css-checkbox" value="Year Round" data-bind=" checked: fruitSeason">
+                                                <label for="radio40" class="css-label">Year Round</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1 style="padding-bottom: 20px;"><a href="/Pages/Glossary/#-F-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Fruit Size</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li style="font-weight: bold;">
+                                            <span style="width: 100px; padding: 15px 0px 0px 25px">
+                                                <img src="images/search/plant/fruit-size.png" alt="">
+                                            </span> <span>
+                                                <input type="checkbox" name="checkboxG54" id="checkboxG54" class="css-checkbox" data-bind=" checked: fruitSize.LessOnePointFive.isSelected">
+                                                <label for="checkboxG54" class="css-label2 bgright">0-1.5 (cm)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG55" id="checkboxG55" class="css-checkbox" data-bind=" checked: fruitSize.LessThree.isSelected">
+                                                <label for="checkboxG55" class="css-label2 bgright">1.5-3 (cm)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG56" id="checkboxG56" class="css-checkbox" data-bind=" checked: fruitSize.LessSeven.isSelected">
+                                                <label for="checkboxG56" class="css-label2 bgright">3-7 (cm)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG57" id="checkboxG57" class="css-checkbox" data-bind=" checked: fruitSize.LessTen.isSelected">
+                                                <label for="checkboxG57" class="css-label2 bgright">7-10 (cm)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG58" id="checkboxG58" class="css-checkbox" data-bind=" checked: fruitSize.LessTwenty.isSelected">
+                                                <label for="checkboxG58" class="css-label2 bgright">10-20 (cm)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG59" id="checkboxG59" class="css-checkbox" data-bind=" checked: fruitSize.overTwenty.isSelected">
+                                                <label for="checkboxG59" class="css-label2 bgright">&gt;20 (cm)</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                </div>
+                <div id="step-8" class="steps">
+
+                        <div class="top_des">
+                        </div>
+                        <div class="col_left">
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-T-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Trunk Esthetic Value</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li style="padding-top: 20px;">
+                                            <span>
+                                                <input type="checkbox" name="checkboxG60" id="checkboxG60" class="css-checkbox" data-bind=" checked: trunkEstheticValue.Showy.isSelected">
+                                                <label for="checkboxG60" class="css-label2">Showy</label>
+                                            </span>
+                                            <br>
+                                            <br>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG61" id="checkboxG61" class="css-checkbox" data-bind=" checked: trunkEstheticValue.NotShowy.isSelected">
+                                                <label for="checkboxG61" class="css-label2">Not Showy</label>
+                                            </span>
+                                            <br>
+                                            <br>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG62" id="checkboxG62" class="css-checkbox " data-bind=" checked: trunkEstheticValue.Smooth.isSelected">
+                                                <label for="checkboxG62" class="css-label2">Smooth Texture</label>
+                                            </span>
+                                            <br>
+                                            <br>
+                                            <span style="width: 40%;">
+                                                <input type="checkbox" name="checkboxG63" id="checkboxG63" class="css-checkbox" data-bind=" checked: trunkEstheticValue.IntermediateTexture.isSelected">
+                                                <label for="checkboxG63" class="css-label2">Intermediate Texture</label>
+                                            </span>
+                                            <br>
+                                            <br>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG64" id="checkboxG64" class="css-checkbox" data-bind=" checked: trunkEstheticValue.RoughTexture.isSelected">
+                                                <label for="checkboxG64" class="css-label2">RoughTexture</label>
+                                            </span>
+                                            <br>
+                                            <br>
+                                            <span style="width: 40%;">
+                                                <input type="checkbox" name="checkboxG65" id="checkboxG65" class="css-checkbox" data-bind=" checked: trunkEstheticValue.Fissured.isSelected">
+                                                <label for="checkboxG65" class="css-label2">Deeply Fissured</label>
+                                            </span>
+                                            <br>
+                                            <br>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG66" id="checkboxG66" class="css-checkbox" data-bind=" checked: trunkEstheticValue.Papery.isSelected">
+                                                <label for="checkboxG66" class="css-label2">Papery</label>
+                                            </span>
+                                            <br>
+                                            <br>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG67" id="checkboxG67" class="css-checkbox" data-bind=" checked: trunkEstheticValue.Spines.isSelected">
+                                                <label for="checkboxG67" class="css-label2">Spines</label>
+                                            </span>
+                                            <br>
+                                            <br>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG68" id="checkboxG68" class="css-checkbox" data-bind=" checked: trunkEstheticValue.Colored.isSelected">
+                                                <label for="checkboxG68" class="css-label2">Colored</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_right">
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-C-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Crownshaft (for palms)</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li style="padding-top: 20px;">
+                                            <span>
+                                                <input type="radio" name="radio_crownshaft" id="radio59" class="css-checkbox" value="Yes" data-bind=" checked: crownshaft">
+                                                <label for="radio59" class="css-label">Available</label>
+                                            </span>
+                                            <br>
+                                            <br>
+                                            <span>
+                                                <input type="radio" name="radio_crownshaft" id="radio60" class="css-checkbox" value="No" data-bind=" checked: crownshaft">
+                                                <label for="radio60" class="css-label">Not available</label>
+                                            </span>
+                                            <br>
+                                            <br>
+                           
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+    
+                </div>
+                <div id="step-9" class="steps">
+    
+                        <div class="top_des">
+                        </div>
+                        <div class="col_left">
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-E-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Edible Plant Parts</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_ediblePlantParts" id="radio41" class="css-checkbox" value="Yes" data-bind=" checked: ediblePlantParts">
+                                                <label for="radio41" class="css-label">Yes</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_ediblePlantParts" id="radio42" class="css-checkbox" value="No" data-bind=" checked: ediblePlantParts">
+                                                <label for="radio42" class="css-label">No</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-F-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Fruit/ Leaves/ Flower Litter</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_fruitLeavesFlowerLitter" id="radio43" class="css-checkbox" value="Yes" data-bind=" checked: fruitLeavesFlowerLitter">
+                                                <label for="radio43" class="css-label">Yes</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_fruitLeavesFlowerLitter" id="radio44" class="css-checkbox" value="No" data-bind=" checked: fruitLeavesFlowerLitter">
+                                                <label for="radio44" class="css-label">No</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-S-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Surface Rooting</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_surfaceRooting" id="radio45" class="css-checkbox" value="Yes" data-bind=" checked: surfaceRooting">
+                                                <label for="radio45" class="css-label">Yes</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_surfaceRooting" id="radio46" class="css-checkbox" value="No" data-bind=" checked: surfaceRooting">
+                                                <label for="radio46" class="css-label">No</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-P-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Plant Toxicity</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_plantToxicity" id="radio47" class="css-checkbox" value="Yes" data-bind=" checked: plantToxicity">
+                                                <label for="radio47" class="css-label">Yes</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_plantToxicity" id="radio48" class="css-checkbox" value="No" data-bind=" checked: plantToxicity">
+                                                <label for="radio48" class="css-label">No</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_right">
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-I-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Invasive Potential</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_invasivePotential" id="radio49" class="css-checkbox" value="Yes" data-bind=" checked: invasivePotential">
+                                                <label for="radio49" class="css-label">Yes</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_invasivePotential" id="radio50" class="css-checkbox" value="No" data-bind=" checked: invasivePotential">
+                                                <label for="radio50" class="css-label">No</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-P-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Pruning Requirements</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_pruningRequirements" id="radio51" class="css-checkbox" value="Needed" data-bind=" checked: pruningRequirements ">
+                                                <label for="radio51" class="css-label">Needed</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_pruningRequirements" id="radio52" class="css-checkbox" value="Little Needed" data-bind=" checked: pruningRequirements">
+                                                <label for="radio52" class="css-label">Little Needed</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_pruningRequirements" id="radio53" class="css-checkbox" value="None" data-bind=" checked: pruningRequirements">
+                                                <label for="radio53" class="css-label">None</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-S-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Suceptibility to Diseases</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_suceptibilityToDiseases" id="radio54" class="css-checkbox" value="Yes" data-bind=" checked: suceptibilityToDiseases">
+                                                <label for="radio54" class="css-label">Yes</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_suceptibilityToDiseases" id="radio55" class="css-checkbox" value="No" data-bind=" checked: suceptibilityToDiseases">
+                                                <label for="radio55" class="css-label">No</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1><a href="/Pages/Glossary/#-L-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Life Span (years)</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_lifeSpan" id="radio56" class="css-checkbox" value="&lt;25" data-bind=" checked: lifeSpan">
+                                                <label for="radio56" class="css-label">&lt;25</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_lifeSpan" id="radio57" class="css-checkbox" value="25-50" data-bind=" checked: lifeSpan">
+                                                <label for="radio57" class="css-label">25-50</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_lifeSpan" id="radio58" class="css-checkbox" value="&gt;50" data-bind=" checked: lifeSpan">
+                                                <label for="radio58" class="css-label">&gt;50</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="btn"id="back" >back</span>
+    <button style="background-color: #6CB00B;" id="search">search</button>
+    <span class="btn"id="next" >next</span>
+    <button style="background-color: #6CB00B;" id="resetfields" type="reset">resetfields</button>
+    
+
+
+<style>
+    .btn
+{   display:inline-block;
+    background-color: #6CB00B;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px 35px 12px 35px;
+    text-decoration: none;
+
+}
+</style>
+
+</div>
+
+	</div>
+
+
+
+</div>
+</form>
+
+
+    <div class="w3hubs-footer">
+        <div class="w3hubs-nav1">
+            <ul>
+
+                <li><a href="https://www.aub.edu.lb/Libraries/Services/Pages/Copyright.aspx">© Copyright</a></li>
+                <li><a href="https://www.mongodb.com/">Citing the plant Database</a></li>
+                <li><a href="acknolgement.html">Acknowledgments</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                  
+            </ul>
+        </div>
+     </div>
+
+
+
+
+</body>
+</html>

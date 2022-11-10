@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html >
+<head>  
+<title>my project</title>
+  <link rel="stylesheet" href="home.css">
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="nav_search.css">
+  <link rel="stylesheet" href="country.css">
+  <link rel="stylesheet" href="searchbycriteria.css">
+  <link rel="stylesheet" href="results.css">
+
+    
+
+</head>
+<body>
+    <div class="flexbox"></div>
+<header id="headpage">
+    <a href="#" class="logo">
+        <img src="images/aub-log1.png">
+        <span class="fontsmall">Landscape Design & Ecosystem Management</span>
+        <span class="fontnormal">Faculty of Agriculture & Food Sciences</span>
+
+    </a>
+    <nav>
+		<ul> 
+
+			<li>
+                <a href="/">Home <i class="icon-chevron-down"></i></a> 
+				<ul>
+					<li><a href="searchbyname.html" >Search By Name</a></li>
+					<li><a href="plantidentifaction.html">Plant identfication</a></li>
+                    <li><a href="editpage.html">Edit plant Database</a></li>
+				</ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="usefulink.html">Useful Links</a></li>
+			<li><a href="/imagegallary">Image Gallery</a></li>
+	
+			<li><a href="Popular_Plant_Categories.html">Popular Plant Categories</a></li>
+			<li><a href="gloccery.html">Glossary</a></li>
+			<li><a href="contactus.html">Contact</a></li>
+		</ul>
+	</nav>
+    <div id="socialmedia">
+        <a href="https://twitter.com/AUB_Lebanon?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+        <a href="https://www.facebook.com/aub.edu.lb/" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+        <a href="http://www.aub.edu.lb/Libraries/Pages/default.aspx" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+    </div>
+
+</header>    
+<div id="mainimg"></div>   
+
+<div id="part2flex">
+    <div id="divofimges">
+
+        <a href="searchbyname.html"> <div  class="searchtype" >
+        <img src="images/search1.jpg" alt="" >
+        <h3>Search By Name</h3>
+        </div></a>
+        <a href="plantidentifaction.html"> <div  class="searchtype">
+            <img src="images/icon.png" alt="" srcset="">
+            <h3>Plant identfication</h3>
+        </div></a>
+        <a href="editpage.html"><div  class="searchtype">
+            <img src="images/edit.png" alt="" srcset="">
+            <h3>Edit plant Database</h3>
+        </div></a>
+           
+        </div>
+<div id="searchengine" style="text-align:center">
+    
+    <h1 id="head">Results</h1>
+    <div id="results">
+    
+      <% for (var i = 0; i < plants.length; i++) { %>   
+    <div id="itemresult">
+    <img src='images\plantsimages\<%= plants[i].common_name%>.jpg'  alt="">
+    <div id="nextimg">
+    <h2 id="value" style="display: inline"> <%= plants[i].common_name %> </h2> </span>( <%= plants[i].scientific_name %>)</span>
+    <div id="properties">  
+    <img src= 'images\soil\<%= plants[i].soil %>.png'  alt="">
+    <img src='images\water\<%= plants[i].water %>.png'  alt="">
+    <img src='images\light\<%= plants[i].light %>.png'  alt="">
+    <img src='images\planttype\<%= plants[i].planttype%>.png'  alt="">
+    <img src='images\canopyshape\<%= plants[i].canopyshape%>.png'  alt="">    
+
+    <form action="/myprofile" method="get" id='<%= i %>'>
+    <input type="text" name="plantname" value="<%= plants[i].common_name %>" style="display: none">
+    </form>
+    <h2 style="cursor: pointer;" id='<%= i %>' >full info</h2> 
+
+
+
+
+    </div>  
+    </div>
+    
+    </div>
+    <% } %>
+
+    </div>
+<script type="text/javascript">
+    function $(id){return document.getElementById(id)}
+    window.onload=function(){ 
+        
+        
+        
+        let x= document.getElementsByTagName('h2');
+        let counter = 0 ;
+        for (let index = 0; index < x.length; index++) {
+            if(index%2 !=0){ 
+                x[index].onclick = function(){$(counter).submit();
+                    counter++;
+            }
+          
+            
+        }
+
+
+        
+    }
+
+
+}
+
+</script>
+
+</div>
+
+</div>
+
+
+    <div class="w3hubs-footer">
+        <div class="w3hubs-nav1">
+            <ul>
+
+                <li><a href="https://www.aub.edu.lb/Libraries/Services/Pages/Copyright.aspx">© Copyright</a></li>
+                <li><a href="https://www.mongodb.com/">Citing the plant Database</a></li>
+                <li><a href="acknolgement.html">Acknowledgments</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                  
+            </ul>
+        </div>
+     </div>
+
+
+
+
+</body>
+</html>

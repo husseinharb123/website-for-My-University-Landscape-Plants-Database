@@ -1,0 +1,50 @@
+div.polaroid {
+	margin-left: 20px; 
+ width:25%;
+height: 35%;  
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.containerp {
+  text-align: center;
+  padding:  10px;
+  margin-left: 5px;
+	background-color: lightgreen; 
+	margin-left: 0; 
+}
+
+div.main{ 
+position: relative; 
+left: 40px; 
+display:flex; 
+flex-wrap: wrap;
+} 
+
+div.polaroid img{ 
+width: 150px; 
+height: 200px;}
+
+#searchengine{ 
+	width: 900px;
+	border: 1px solid green; 
+	z-index: 1; 
+	background-color: #F0FFF0;
+	
+}
+
+.flexbox{ 
+display: flex; } 
+
+#p{ 
+position: relative; 
+top: 57px; 
+right: 135px; 
+padding: 10px; 
+width: 220px;
+transform: rotate(90deg);
+background-color: lightgreen;
+border-left: 6px solid green;
+z-index: 2; 
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html >
+<head>  
+<title>my project</title>
+  <link rel="stylesheet" href="home.css">
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="nav_search.css">
+  <link rel="stylesheet" href="country.css">
+  <link rel="stylesheet" href="searchbycriteria.css">
+  <link rel="stylesheet" href="editpage.css">
+
+    
+
+</head>
+<body>
+    <div class="flexbox"></div>
+<header id="headpage">
+    <a href="#" class="logo">
+        <img src="images/aub-log1.png">
+        <span class="fontsmall">Landscape Design & Ecosystem Management</span>
+        <span class="fontnormal">Faculty of Agriculture & Food Sciences</span>
+
+    </a>
+
+    <nav>
+		<ul> 
+
+			<li>
+                <a href="/">Home <i class="icon-chevron-down"></i></a> 
+				<ul>
+					<li><a href="searchbyname.html" >Search By Name</a></li>
+					<li><a href="plantidentifaction.html">Plant identfication</a></li>
+                    <li><a href="editpage.html">Edit plant Database</a></li>
+				</ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="usefulink.html">Useful Links</a></li>
+			<li><a href="/imagegallary">Image Gallery</a></li>
+	
+			<li><a href="Popular_Plant_Categories.html">Popular Plant Categories</a></li>
+			<li><a href="gloccery.html">Glossary</a></li>
+			<li><a href="contactus.html">Contact</a></li>
+		</ul>
+	</nav>
+
+    <div id="socialmedia">
+        <a href="https://twitter.com/AUB_Lebanon?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+        <a href="https://www.facebook.com/aub.edu.lb/" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+        <a href="http://www.aub.edu.lb/Libraries/Pages/default.aspx" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+    </div>
+
+</header>    
+<div id="mainimg"></div>   
+
+<div id="part2flex">
+    <div id="divofimges">
+
+        <a href="searchbyname.html"> <div  class="searchtype" >
+        <img src="images/search1.jpg" alt="" >
+        <h3>Search By Name</h3>
+        </div></a>
+        <a href="plantidentifaction.html"> <div  class="searchtype">
+            <img src="images/icon.png" alt="" srcset="">
+            <h3>Plant identfication</h3>
+        </div></a>
+        <a href="editpage.html"><div  class="searchtype">
+            <img src="images/edit.png" alt="" srcset="">
+            <h3>Edit plant Database</h3>
+        </div></a>
+           
+        </div>
+
+<div id="searchengine" >
+
+<h1 style="text-align:center" id="head">Modify/Delete</h1>
+<table>
+<form action="/addordelete" method="get">
+    <input type="text" name="deleteoredit" id="deleteoredit" style="display:none">
+    <input type="text" name="checker" id="checker" style="display:none">
+<tr><td><span>name of plant :</span> </td><td><input type="text" name="plantname" id="plantname"></td></tr><br>
+<tr> <td> <span>property you want to modify:</span> </td><td><input type="text" name="propertyname" id="propertyname"></td></tr><br>
+<tr> <td><span>value of property:</span>  </td> <td><input type="text" name="valueofprop" id="valueofprop"></td>      </tr><br>
+<tr> <td><span>CLICK here to modifie the plant:</span>  </td><td><button id="but1" onblur="convert()">Modify</button></td> <td style="color: red;">Warning !! information will be changed</td>    
+<tr> <td><span>CLICK here to delete the plant:</span>  </td><td><button id="but2" onblur="convert()">Delete</button></td> <td style="color: red;">Warning !! information cannot be recovered</td>               </tr>
+
+
+</table>
+</form>
+<script>
+window.onload = function(){
+    
+document.getElementById("but1").onclick=function(){document.getElementById("deleteoredit").value= this.innerHTML ; document.getElementById("checker").value= document.getElementById("plantname").value }
+document.getElementById("but2").onclick=function(){document.getElementById("deleteoredit").value= this.innerHTML;}
+    let x= document.querySelectorAll('input');
+     for (let index = 0; index < x.length; index++) {
+    x[index].onblur=function(){ x[index].value = x[index].value.toLowerCase();}
+}
+
+}
+
+</script>
+
+<h1 id='head'>ADD</h1>
+<form method="get" action="/addnew">
+
+<table border=1 style="border-collapse: collapse">
+    <tr>  <td>common_name</td> <td> <input type="text" name="common_name" ></td><td>scientific_name</td> <td> <input type="text" name="scientific_name" ></td></tr>
+<tr>  <td>country</td> <td> <input type="text" name="country" ></td><td>light</td> <td> <input type="text" name="light" ></td></tr>
+<tr>  <td>planttype</td> <td> <input type="text" name="planttype" > </td><td>water</td> <td> <input type="text" name="water" ></td></tr>
+<tr>  <td>leafcolorgrowing</td> <td> <input type="text" name="leafcolorgrowing" ></td><td>canopyshape</td> <td> <input type="text" name="canopyshape" ></td></tr>
+<tr>  <td>soil</td> <td> <input type="text" name="soil" ></td> <td>leafcolorchanging</td> <td> <input type="text" name="leafcolorchanging" ></td></tr>
+<tr>  <td>flowerColor</td> <td> <input type="text" name="flowerColor" > </td><td>fruitcolor</td> <td> <input type="text" name="fruitcolor" ></td></tr>
+<tr>  <td>radio_heatTolerance</td> <td> <input type="text" name="radio_heatTolerance" ></td><td>radio_droughtTolerance</td> <td> <input type="text" name="radio_droughtTolerance" ></td></tr>
+<tr>  <td>radio_frostTolerance</td> <td> <input type="text" name="radio_frostTolerance" ></td><td>radio_saltTolerance</td> <td> <input type="text" name="radio_saltTolerance" ></td></tr>
+<tr>  <td>radio_lifeCycle</td> <td> <input type="text" name="radio_lifeCycle" > </td><td>radio_growthRate</td> <td> <input type="text" name="radio_growthRate" ></td></tr>
+<tr>  <td>radio_leafPersistance</td> <td> <input type="text" name="radio_leafPersistance" ></td><td>radio_flowerScent</td> <td> <input type="text" name="radio_flowerScent" ></td></tr>
+<tr>  <td>radio_flowerShowiness</td> <td> <input type="text" name="radio_flowerShowiness" ></td><td>radio_flowerSeason</td> <td> <input type="text" name="radio_flowerSeason" ></td></tr>
+<tr>  <td>radio_fruitShowiness</td> <td> <input type="text" name="radio_fruitShowiness" > </td><td>radio_fruitTypeCategory</td> <td> <input type="text" name="radio_fruitTypeCategory" ></td></tr>
+<tr>  <td>radio_crownshaft</td> <td> <input type="text" name="radio_crownshaft" ></td><td>radio_ediblePlantParts</td> <td> <input type="text" name="radio_ediblePlantParts" ></td></tr>
+<tr>  <td>radio_fruitLeavesFlowerLitter</td> <td> <input type="text" name="radio_fruitLeavesFlowerLitter" ></td><td>radio_plantToxicity</td> <td> <input type="text" name="radio_plantToxicity" ></td></tr>
+<tr>  <td>radio_surfaceRooting</td> <td> <input type="text" name="radio_surfaceRooting" > </td><td>radio_suceptibilityToDiseases</td> <td> <input type="text" name="radio_suceptibilityToDiseases" ></td></tr>
+<tr>  <td>radio_invasivePotential</td> <td> <input type="text" name="radio_invasivePotential" ></td><td>arabicname</td> <td> <input type="text" name="arabicname" ></td></tr>
+<tr>  <td>radio_lifeSpan</td> <td> <input type="text" name="radio_lifeSpan" ></td> <td>frenchname</td> <td> <input type="text" name="frenchname" ></td></tr>
+
+
+
+
+</table>
+<div>
+ <span style="font-weight: bold;">descrption :</span>  <br>
+ <textarea name="description" id="" cols="30" rows="10"></textarea> <span> select your plant profile<input type="file" name="filename" id=""> </span> 
+ <button style="position: relative; top:-100px ;right:200px" >ADD</button>
+</div>
+
+</form>
+
+
+    </div>
+
+
+</div>
+
+</div>
+
+
+    <div class="w3hubs-footer">
+        <div class="w3hubs-nav1">
+            <ul>
+
+                <li><a href="https://www.aub.edu.lb/Libraries/Services/Pages/Copyright.aspx">© Copyright</a></li>
+                <li><a href="https://www.mongodb.com/">Citing the plant Database</a></li>
+                <li><a href="acknolgement.html">Acknowledgments</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                  
+            </ul>
+        </div>
+     </div>
+
+
+
+
+</body>
+</html>

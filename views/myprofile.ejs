@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html >
+<head>  
+<title>my project</title>
+  <link rel="stylesheet" href="home.css">
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="nav_search.css">
+  <link rel="stylesheet" href="country.css">
+  <link rel="stylesheet" href="searchbycriteria.css">
+  <link rel="stylesheet" href="profile.css">
+
+    
+
+</head>
+<body>
+    <div class="flexbox"></div>
+<header id="headpage">
+    <a href="#" class="logo">
+        <img src="images/aub-log1.png">
+        <span class="fontsmall">Landscape Design & Ecosystem Management</span>
+        <span class="fontnormal">Faculty of Agriculture & Food Sciences</span>
+
+    </a>
+
+    <nav>
+      <ul> 
+  
+        <li>
+                  <a href="/">Home <i class="icon-chevron-down"></i></a> 
+          <ul>
+            <li><a href="searchbyname.html" >Search By Name</a></li>
+            <li><a href="plantidentifaction.html">Plant identfication</a></li>
+                      <li><a href="editpage.html">Edit plant Database</a></li>
+          </ul>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="usefulink.html">Useful Links</a></li>
+        <li><a href="/imagegallary">Image Gallery</a></li>
+    
+        <li><a href="Popular_Plant_Categories.html">Popular Plant Categories</a></li>
+        <li><a href="gloccery.html">Glossary</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div id="socialmedia">
+      <a href="https://twitter.com/AUB_Lebanon?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+      <a href="https://www.facebook.com/aub.edu.lb/" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+      <a href="http://www.aub.edu.lb/Libraries/Pages/default.aspx" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+  </div>
+
+</header>    
+<div id="part2flex">
+  <div id="divofimges">
+
+    <a href="searchbyname.html"> <div  class="searchtype" >
+    <img src="images/search1.jpg" alt="" >
+    <h3>Search By Name</h3>
+    </div></a>
+    <a href="plantidentifaction.html"> <div  class="searchtype">
+        <img src="images/icon.png" alt="" srcset="">
+        <h3>Plant identfication</h3>
+    </div></a>
+    <a href="editpage.html"><div  class="searchtype">
+        <img src="images/edit.png" alt="" srcset="">
+        <h3>Edit plant Database</h3>
+    </div></a>
+       
+    </div>
+<div id="searchengine" style="text-align:center">
+
+    <h1 id="head">  <span style="margin-left: 10%;"> Profile about the <%= plants[0].common_name %> </span>    </h1>
+    <img src='images\plantsimages\<%= plants[0].common_name%>.jpg' alt="">
+
+    <div id="profileproperties" >
+
+        <div id='leftpart'>
+            <ul> 
+            <p class = "hd"> basics</p>
+             <li id = "french">     <span>French Name: </span><%= plants[0].frenchname %> </li> 
+                <li id = "arabic">    <span>Arabic Name: </span><%= plants[0].arabicname %></li> 
+                <li id = "p-type">   <span>Plant type: </span><%= plants[0].planttype %></li> 
+                <li id = "origin"> <span>Origin: </span><%= plants[0].country %></li> 
+               <li id = "growth"> <span>Growth Rate: </span> <%= plants[0].radio_growthRate %></li> 
+                <li id = "shape"> <span>canopy Shape: </span><%= plants[0].canopyshape %> </li> 
+
+            </ul>
+
+
+
+
+
+            <ul> 
+                <p class = "hd"> Foliage</p>  
+                <li id = "leaf-per"> <span>Leaf Persistance: </span>  <%= plants[0].radio_leafPersistance %></li> 
+                <li id = "color-grow"><span>Color(growing season): </span> <%= plants[0].leafcolorgrowing %></li> 
+               <li id = "color-come"> <span>Color(changing season): </span> <%= plants[0].leafcolorchanging %></li> 
+            </ul>  
+            
+            <ul>
+              <p class = "hd">Flower Showiness </p> 
+              <li id = "flr-sexuality"> <span>Showiness: </span><%= plants[0].radio_flowerShowiness %> </li>
+              <li id = "flr-sexuality"> <span>scent: </span><%= plants[0].radio_flowerScent %> </li>
+           <li id = "flr-color"> <span>Color: </span><%= plants[0].flowerColor %></li>
+             <li id = "season"> <span>Seasons: </span><%= plants[0].radio_flowerSeason %></li>
+          </ul>
+
+
+          <ul>
+              <p class = "hd">Fruit Type</p>
+               <li id = "frt-show"> <span>Fruit Showiness: </span><%= plants[0].radio_fruitShowiness %></li> 
+              <li id = "frt-range"> <span>Fruit type : </span><%= plants[0].radio_fruitTypeCategory %></li> 
+
+          </ul>
+
+          <ul> 
+              <p class = "hd">Tolerance</p>
+              <li id = "frost-tol"> <span>Frost Tolerance: </span><%= plants[0].radio_frostTolerance %> </li> 
+              <li id = "heat-tol" > <span>heat Tolerance: </span> <%= plants[0].radio_heatTolerance %></li> 
+               <li id = "dt-tel"> <span>Drought Tolerance: </span><%= plants[0].radio_droughtTolerance %> </li> 
+              <li id = "salt-tel">  <span>Salt Tolerance: </span><%= plants[0].radio_saltTolerance %></li>
+          </ul> 
+
+          <ul> 
+              <p class = "hd">Requirements</p>
+             <li id = "sol-req"> <span>soil Requirements: </span><%= plants[0].soil %> </li> 
+             <span></span>  <li id = "wt-req"> <span>Water Requirements: </span><%= plants[0].water %></li> 
+               <li id = "tt-req"><span>Light Requirements: </span><%= plants[0].light %></li>
+          </ul> 
+
+
+          <ul>
+              <p class = "hd">Management</p> 
+                 <li id = "toxic"><span>Toxicity: </span><%= plants[0].radio_plantToxicity %></li> 
+              <li id = "invade" > <span>Invasive Potential: </span><%= plants[0].radio_invasivePotential %></li> 
+                <li id = "pests"><span>Susceptibility to Pests and Diseases: </span><%= plants[0].radio_suceptibilityToDiseases %></li> 
+    
+               <li id = "fr-lv"><span>Fruit/ Leaves/ Flowers litter: </span><%= plants[0].radio_fruitLeavesFlowerLitter %></li>
+              <li id = "root"> <span>Surface Rooting: </span><%= plants[0].radio_surfaceRooting %> </li>
+                <li id = "life"><span>Life Span: 25-50 years: </span><%= plants[0].radio_lifeSpan %></li> 
+               <li id = "edible"><span>Edible Parts: </span><%= plants[0].radio_ediblePlantParts %></li>
+
+          </ul>
+
+
+        </div>
+        
+
+
+
+
+    </div>
+    <div style="margin-top:30px">
+      <a href="https://www.google.com/search?q=<%= plants[0].common_name %>&rlz=1C1CHBF_enUS917US917&sxsrf=AOaemvLgFUohrm8eq_2pbx4RU2fGVyjjUw%3A1637848831306&ei=_5afYZyWEuOExc8Pnvuf8Ak&ved=0ahUKEwjckaSu1rP0AhVjQvEDHZ79B54Q4dUDCA4&uact=5&oq=ali&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgjECcyBAgjECcyBAgAEEMyBAgAEEMyBAguEEMyBQgAEIAEMgsILhCxAxDHARDRAzIOCC4QgAQQsQMQxwEQ0QMyCAgAELEDEIMBOgQILhAnOgUILhCABEoFCDgSATFKBAhBGABQAFibAmD2A2gAcAB4AIAB3AKIAaMEkgEHMC4xLjAuMZgBAKABAcABAQ&sclient=gws-wiz" style="color:#6CB00B"><p id = "search">Search plant on Google</p> </a>  
+      <br>
+      <a href="#" style="color:#6CB00B"><p id = "pdf">Download as PDF</p></a>   
+    </div>
+            
+
+
+</div>
+
+</div>
+
+
+    <div class="w3hubs-footer">
+        <div class="w3hubs-nav1">
+          <ul>
+
+            <li><a href="https://www.aub.edu.lb/Libraries/Services/Pages/Copyright.aspx">© Copyright</a></li>
+            <li><a href="https://www.mongodb.com/">Citing the plant Database</a></li>
+            <li><a href="acknolgement.html">Acknowledgments</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+              
+        </ul>
+        </div>
+     </div>
+
+
+
+
+</body>
+</html>

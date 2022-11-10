@@ -1,0 +1,22 @@
+.navigation_links{ 
+	background-color: lightgreen;
+	border-left: 6px solid green;
+	z-index: 2;
+	padding: 5px; 
+
+	margin-left: 10px;
+	margin-right: 10px; 	
+} 
+.navigation_links li{ 
+	position: relative; 
+	right: 15px; 
+	margin-bottom: 20px;
+}
+
+.navigation_links li a { 
+	color: black;
+} 
+
+.navigation_links li a:hover{ 
+	color: red;
+} 
